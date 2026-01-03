@@ -192,15 +192,18 @@ const krisBlocks = [
   /* 크레딧 */
   {
     name: 'kris_credit',
-    template: '이 블록은 GPT와 크리스가 만들었습니다',
-    skeleton: 'basic',
-    color: KRIS_COLOR.default,
-    outerLine: KRIS_COLOR.darken,
-    params: [],
+    template: '%1',
+    color: EntryStatic.colorSet.common.TRANSPARENT,
+    skeleton: 'basic_text',
+    params: [{
+      type: 'Text',
+      text: '이 블록은 GPT와 크리스가 만들었습니다',
+      color: EntryStatic.colorSet.common.TEXT,
+      align: 'center',
+    }],
     def: [],
     paramsKeyMap: {},
     class: 'text',
-    func: () => {},
   },
 ];
 
